@@ -1,0 +1,22 @@
+.caro-player {
+  display: flex;
+  align-items: center;
+  color: white;
+
+  & + & {
+    margin-top: 16px;
+  }
+
+  &__type {
+    margin-right: 16px;
+    font-size: 1.25rem;
+  }
+
+  &__name {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 8px;
+    width: 100%;
+  }
+}

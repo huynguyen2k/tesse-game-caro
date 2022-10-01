@@ -1,0 +1,38 @@
+.caro-board {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    padding: 16px;
+    display: inline-grid;
+    gap: 2px;
+    background-color: #555;
+    background-clip: content-box;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #cfd8dc;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    cursor: pointer;
+    user-select: none;
+
+    &.is-x {
+      color: #4caf50;
+    }
+
+    &.is-o {
+      color: #ff1744;
+    }
+  }
+}
